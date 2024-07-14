@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    z-index: 999;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-link li {
+    position: relative;
+    left: 180%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 10%;
+    padding-right: 40%;
+}
+
+.nav-link a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo1 {
+    position: relative;
+    margin-top: 1%;
+    left: 7%;
+    height: 10%;
+    width: 10%;
+}
+
+.nav-icons {
+    position: relative;
+    list-style: none;
+    display: flex;
+}
+
+.nav-icons li {
+    position: relative;
+    top: 30%;
+    left: 1058%;
+    padding-right: 30% ;
+    cursor: pointer;
+}
+
+.wrapper a {
+    position: relative;
+    top: 4%;
+    left: 1544%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal__content {
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    left: 37.5%;
+    height: 100%;
+    width: 25%;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+  
+  .modal__footer {
+    position: relative;
+    top: 35%;
+    border: 1px solid #D9D9D9;
+  }
+  .modal__close {
+    position: absolute;
+    top: 2.9em;
+    right: 7%;
+    color: #585858;
+    text-decoration: none;
+  }
+  
+  .modal-txt1 {
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 23px;
+  }
+  
+  .modal-line {
+    position: relative;
+    margin-top: 2em;
+    background-color: #D9D9D9;
+    width: 80%;
+    height: 1.6px;
+  }
+  
+  .cart-cont {
+    display: flex;
+    position: relative;
+    top: 7%;
+    margin-bottom: 5%;
+  }
+  
+  .modal-txt2 {
+    position: relative;
+    top: 25%;
+    left: 20%;
+    font-size: 16px;
+  }
+  
+  .modal-txt3 {
+    position: relative;
+    top: 25%;
+    left: 20%;
+  }
+  
+  .modal-txt3 span {
+    color: #B88E2F;
+  }
+  
+  .x {
+    position: relative;
+    top: -9%;
+    left: 170%;
+  }
+  
+  .x1 {
+    position: relative;
+    top: -9%;
+    left: 140%;
+  }
+  
+  .subtotal {
+    display:flex;
+    position:relative;
+    top: 32%;
+  }
+  
+  .modal-txt5 {
+    position: relative;
+    left: 30%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #B88E2F;
+  }
+  
+  .modal-btn {
+    position: relative;
+    top: 40%;
+  }
+  
+  .modal-btn1{
+    height: 3em;
+    width: 28%;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .modal-btn1:hover{
+    background-color: #B88E2F;
+    color: white;
+  }
+  
+  .modal-btn2{
+    height: 3em;
+    width: 32%;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .modal-btn2:hover{
+    background-color: #B88E2F;
+    color: white;
+  }
+  
+  .modal-btn3{
+    height: 3em;
+    width: 32%;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .modal-btn3:hover{
+    background-color: #B88E2F;
+    color: white;
+  }
+
+  /*PAGE 1*/
+
+.page-1 {
+    position: relative;
+    margin-top: 4%;
+    height: 50vh;
+    background-image: url(img/shop-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+.main-header {
+    position: relative;
+    top: 17%;
+    justify-content: center;
+    text-align: center;
+}
+
+.p1-txt1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.p1-txt2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*PAGE 2*/
+
+.page-2 {
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 5em;
+    left: 10%;
+    background-color: transparent;
+    padding: 5px 20px 15px 20px;
+    width: 40%;
+  }
+
+  .container2 {
+    position: relative;
+    top: -50em;
+    left: 53%;
+    background-color: transparent;
+    padding: 5px 20px 15px 20px;
+    width: 40%;
+  }
+  
+  input[type=text] {
+    width: 90%;
+    height: 5em;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #9F9F9F;
+    border-radius: 20px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    position: relative;
+    top: -9.5em;
+    left: 120%;
+    background-color: #B88E2F;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    background-color: #806320;
+  }
+
+  .shipping {
+    position: relative;
+    left: 115%;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    position: relative;
+    top: 1em;
+    width: 100%;
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: black;
+  }
+  span.price1 {
+    float: left;
+    color: grey;
+  }
+  .p2-txt1 {
+    position: relative;
+    top: -1em;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .p2-txt2 {
+    position: relative;
+    top: -1em;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .p2-txt3 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .p2-txt4 span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #B88E2F;
+  }
+
+  .p2-txt5 {
+    padding-top: 5%;
+  }
+
+  .subtxt {
+    display: flex;
+  }
+
+  /* Hide the default checkbox */
+.container1 input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container1 {
+    display: block;
+    position: relative;
+    top: 1.5em;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container1 input:checked ~ .checkmark {
+    background-color: #B88E2F;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container1 .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+
+  /* Hide the default checkbox */
+.container3 input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container3 {
+    display: block;
+    position: relative;
+    top: -10em;
+    left: 115%;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container3 input:checked ~ .checkmark1 {
+    background-color: #B88E2F;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container2 input:checked ~ .checkmark1:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container3 .checkmark1:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+
+  .p2-txt6 {
+    position: absolute;
+    top: 17.5em;
+    left: 8%;
+  }
+
+  .p2-txt7 {
+    position: absolute;
+    top: 20em;
+    font-size: 16px;
+    font-weight: 300;
+    color: #9F9F9F;
+  }
+
+  .subtxt ul {
+    position: absolute;
+    top: 26em;
+    left: 7%;
+  }
+
+  .subtxt ul li {
+    list-style-type: circle;
+    white-space: nowrap;
+    color: #9F9F9F;
+    font-weight: 500;
+  }
+
+  .p2-txt8 {
+    position: absolute;
+    top: 31em;
+  }
+
+  .p2-txt9 {
+    position: relative;
+    top: -11.3em;
+    left: 120%;
+  }
+
+  /*SA CARD TO*/
+
+  .flip-card {
+    position: absolute;
+    top: 86em;
+    left: 28%;
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+  }
+  
+  .heading_8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+  }
+  
+  .chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+  
+  .contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+  }
+  
+  .number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .6em;
+    top: 8.3em;
+    left: 1.6em;
+  }
+  
+  .valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+  }
+  
+  .date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+  }
+  
+  .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+  }
+  
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+  }
+  
+  .sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+  }
+  
+  .code {
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: black;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+  }
+  
+  .flip-card-back {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+    transform: rotateY(180deg);
+  }
+
+  /* SA BANNER */
+
+  .banner {
+    position: relative;
+    top: -123em;
+    left: 23%;
+    width: 20%;
+    height: 90%;
+    margin: 0 auto;
+    background-image: url("img/sale.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+  }
+  
+  .inner-banner {
+    position: relative;
+    top: 30%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+  }
+  
+  .banner p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #25283D;
+    text-align: center;
+    line-height: 60px;
+  }
+  
+  .sale-btn {
+    position: relative;
+    top: 5.7em;
+    width: 100%;
+    height: 24%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border: 1px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+    
+  }
+  
+  .sale-btn:hover {
+    background-color: #B88E2F;
+    color: white;
+    border: 1px solid #B88E2F;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+  }
+
+  /*PAGE 3*/
+
+.page-3 {
+    height: 50vh;
+    margin-top: 70%;
+}
+
+.p3-cont {
+    position: relative;
+    top: 20%;
+    height: 70%;
+    width: 100%;
+    background-color: #F9F1E7;
+}
+
+.p3-cont img {
+    position: relative;
+    top: -10em;
+}
+
+/*PAGE 6 NA*/
+
+.page-6 {
+    height: 80vh;
+    width: 110%;
+    margin: -5% -10%;
+  }
+
+  .p6-txt {
+    position: relative;
+    margin-top: 5%;
+    left: 20%;
+  }
+
+  .p6-txt1 {
+    color: black;
+    font-size: 26px;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  
+  .p6-txt2 {
+    margin-top: 5%;
+    color: #9F9F9F;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .p6-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 13% 13% 13%;
+    grid-template-rows: 70% 70% 70% 70%;
+    margin-top: -11.4%;
+    left: 30%;
+  }
+
+  .footer a{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+  }
+
+  
+
+  .wave-group {
+    position: relative;
+    top: -20%;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .wave-group .input {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+    cursor: text;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-group .input:focus ~ label .label-char,
+  .wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #B88E2F;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #B88E2F;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 20%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: 80%;
+  }
+
+  .line {
+    position: relative;
+    top: 64%;
+    left: 19%;
+    height: 1px;
+    width: 70%;
+    background-color: #9F9F9F;
+  }
+
+  .p6-txt6 {
+    position: relative;
+    top: 66%;
+    left: 20%;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+  }
+
+
+
+
+
